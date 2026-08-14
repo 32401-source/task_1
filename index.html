@@ -4,31 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahad Task 1</title>
+    <title>Mahad Assessment</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
+        <img src="images/logo.png">
         <h1>Affordable Tutoring</h1>
     </header>
     <nav>
-        <ul>
-            <li class="nav-option"><a href="#end">Links</a></li>
-        </ul>
+        <a href="#1">About Us</a>
+        <a href="#subs">Subjects</a>
+        <a href="#reg">Contact Us</a>
+        <a href="#end">Links</a>
     </nav>
     <main id="main">
-        <h2>Who we are</h2>
+        <h2 id="1">About Us</h2>
         <div class="flex-container-row">
-            <p class="side-text">We are a group of highly capable and enthusiastic students, studying at Sirius College.</p>
+            <p class="side-text">We are a group of highly capable and enthusiastic students, studying at Sirius College. With many people available at all times, you can get quality tutoring 24/7, and gain valuable feedback and help when you need it.</p>
             <img src="images/stock-image-studying.jpg" alt="Highschool student studying diligently.">
         </div>
 
         <h2>What we do</h2>
-        <p>Our goal is to provide excellent academic assistance to those who need it at an affordable price. Our
-            tutoring is proven to consistently produce results, no matter who you are.</p>
-        <p>Prices start at $25/hr for groups, and $40/hr for one on one sessions.</p>
-        <h2>Eligible Subjects for Tutoring:</h2>
+        <div class="flex-container-row">
+            <p>Our goal is to provide excellent academic assistance to those who need it at an affordable price. Our tutoring is proven to consistently produce results, no matter who you are. <br> Prices start at $25/hr for groups, and $40/hr for one on one sessions.</p>
+            <img src="images/studying-image-2.jpg" alt="Man studying">
+        </div>
+
+        <h2 id="subs">Eligible Subjects for Tutoring:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subjects</th>
+                    <th>Availability</th>
+                    <th>Single Pricing</th>
+                    <th>Group Pricing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mathematics, English, Science K-10</td> <td>Available</td> <td>$25/hr</td> <td>$20/hr</td>
+                    <td>VCE Psychology U12 + U34</td> <td>Available</td> <td>$40/hr</td> <td>$30/hr</td>
+                </tr>
+            </tbody>
+        </table>
         <ul>
             <li>Mathematics K-10</li>
             <li>English K-10</li>
@@ -38,12 +58,27 @@
             <li>VCE Mathematical Methods U12 + U34</li>
             <li>VCE Specialist Mathematics U12 + U34</li>
         </ul>
+        <h2 id="reg">Contact Us</h2>
+        <form>
+            <label>First Name:</label> <input type="text" spellcheck="true" placeholder="John"> <label>Last Name: </label><input type="text" spellcheck="true" placeholder="Doe"><br>
+            <label>Email Address: </label> <input type="email" spellcheck="false" placeholder="john.doe@example.com" required> <br>
+            <label>Phone Number: </label> <input type="tel" required> <br>
+            <label for="query">Reason for enquiry: </label> <select name="query" id="query">
+                <option id="tut">Tutoring Request</option>
+                <option id="fd">Tutor Support & Feedback</option>
+                <option id="qa" disabled>Questions</option>
+                <option id="other">Other</option>
+            </select> 
+            <br>
+            <label>Message (Optional):</label> <textarea></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </main>
     <section id="end">
         <p>See where we came from: <a href="https://sirius.vic.edu.au" title="SC Website Link">Sirius College Website</a></p>
     </section>
 
-    <footer>To contact us, call (dummy phone number)</footer>
+    <footer>To contact us, call (phone number not given for privacy), or send us an email at ouremail@example.com</footer>
 </body>
 
 </html>

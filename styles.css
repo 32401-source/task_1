@@ -2,15 +2,49 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(255, 253, 251);
     padding: 15px;
+
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-weight: 700;
+    }
 }
 
 nav {
     border-bottom: 1px solid black;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
 
-.side-text {
-    max-width: 100px;
-    font-size: 16px;
+    a {
+        width: 100px;
+        max-height: 90%;
+        background-color: rgb(255, 229, 229);
+        text-decoration: none;
+        border-radius: 3px;
+        text-align: center;
+        padding: 5px;
+        transition: all 500ms;
+        font-size: 14px;
+        border: 2px solid black;
+        box-shadow: 2px 2px 2px rgb(54, 28, 28);
+    }
+
+    a:hover {
+        width: 120px;
+        height: 92%;
+        font-size: 15px;
+    }
 }
 
 .flex-container-row {
@@ -20,41 +54,51 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    padding: 20px;
 
     img {
-        height: 452px;
-        width: 678px;
+        height: 339px;
+        width: 508px;
         transition: all 500ms;
     }
 
     img:hover {
-        height: 497px;
-        width: 745px;
+        height: 414px;
+        width: 621px;
     }
 }
 
 main {
     margin-top: 10px;
-    background-color: rgb(255, 224, 184);
+    background-color: rgb(236, 199, 192);
     padding-bottom: 10px;
     padding-top: 5px;
     align-items: center;
     text-align: start;
     margin-left: 20px;
     margin-right: 20px;
+    padding: 10px;
 
     h2 {
         font-size: 50px;
         text-align: center;
         text-decoration: underline;
-        text-decoration-style: dashed;
+        text-decoration-style: wavy;
         text-decoration-thickness: 2px;
+        transition: all 500ms;
+        background-color: rgba(240, 248, 255, 0.678);
+        transition-timing-function: ease-in-out;
+    }
+
+    h2:hover {
+        font-size: 52px;
+        color: white;
     }
 }
 
 section {
     margin-top: 10px;
-    background-color: rgb(255, 224, 184);
+    background-color: rgb(255, 154, 154);
     padding-bottom: 10px;
     padding-top: 5px;
     align-items: center;
@@ -65,11 +109,18 @@ section {
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: rgb(255, 206, 199);
     margin: 0;
 }
 
 footer {
     margin-top: 10px;
     border-top: 1px solid black;
+    text-align: center;
+}
+
+
+textarea {
+    resize: vertical;
+    align-self: center;
 }
