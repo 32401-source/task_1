@@ -171,11 +171,11 @@ input[type="text"] {
     justify-self: center;
     text-align: start;
     height: 2.5rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: none;
     padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 input[type="tel"] {
@@ -183,11 +183,11 @@ input[type="tel"] {
     justify-self: center;
     text-align: start;
     height: 2.5rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: none;
     padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 input[type="email"] {
@@ -195,11 +195,11 @@ input[type="email"] {
     justify-self: center;
     text-align: start;
     height: 2.5rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: none;
-    padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 0.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 input:focus {
@@ -208,7 +208,21 @@ input:focus {
 }
 
 textarea {
-    resize: horizontal;
+    resize: none;
     align-self: center;
-    height: 40px;
+    justify-self: center;
+    text-align: start;
+    height: 2.5rem;
+    width: 80%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+    transition: all 200ms;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+textarea:focus {
+    outline-color: var(--col-3);
+    height: 3rem;
 }
