@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahad Assessment</title>
+    <title>Home -- Affordable Tutoring</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,25 +14,21 @@
 <body>
     <header>
         <img src="images/logo.png">
-        <h1>Affordable Tutoring</h1>
+        <h1>Affordable Tutoring - Home</h1>
     </header>
     <nav>
-        <a href="#1">About Us</a>
-        <a href="#subs">Subjects</a>
-        <a href="#reg">Contact Us</a>
-        <a href="#end">Links</a>
+        <a class="disabled" disabled>Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
     <main id="main">
-        <h2 id="1">About Us</h2>
         <div class="flex-container-row">
-            <p class="side-text">We are a group of highly capable and enthusiastic students, studying at Sirius College. With many people available at all times, you can get quality tutoring 24/7, and gain valuable feedback and help when you need it.</p>
-            <img src="images/stock-image-studying.jpg" alt="Highschool student studying diligently.">
-        </div>
-
-        <h2>What we do</h2>
-        <div class="flex-container-row">
-            <p>Our goal is to provide excellent academic assistance to those who need it at an affordable price. Our tutoring is proven to consistently produce results, no matter who you are. <br> Prices start at $25/hr for groups, and $40/hr for one on one sessions.</p>
-            <img src="images/studying-image-2.jpg" alt="Man studying">
+            <div class="flex-column">
+                <h2>Welcome</h2>
+                <p class="side-text">Get the best, cheap tutoring, at any time</p>
+            </div>
+            
+            <img src="images/tutoring-img.png" alt="Happy tutor and student, studying together.">
         </div>
 
         <h2 id="subs">Eligible Subjects for Tutoring:</h2>
@@ -54,21 +50,6 @@
                 <tr><td>VCE EAL U12 + U34</td> <td>Unavailable</td> <td>N/A</td> <td>N/A</td></tr>
             </tbody>
         </table>
-        <h2 id="reg">Contact Us</h2>
-        <form>
-            <label>Full Name:</label> <br> <input type="text" spellcheck="true" placeholder="John"> <br>
-            <label>Email Address (REQUIRED): </label> <br> <input type="email" spellcheck="false" placeholder="john.doe@example.com" required> <br>
-            <label>Phone Number (REQUIRED): </label> <br> <input type="tel" placeholder="Click to enter text" required> <br>
-            <label for="query">Reason for enquiry: </label> <select name="query" id="query">
-                <option id="tut">Tutoring Request</option>
-                <option id="fd">Tutor Support & Feedback</option>
-                <option id="qa" disabled>Questions</option>
-                <option id="other">Other</option>
-            </select> 
-            <br>
-            <label>Message (Optional):</label> <textarea></textarea>
-            <button type="submit">Send Message</button>
-        </form>
     </main>
     <section id="end">
         <a href="https://sirius.vic.edu.au" title="SC Website Link">See where we learned from</a>
